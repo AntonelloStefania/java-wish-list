@@ -26,11 +26,11 @@ public class WishList {
 				
 				if(strOrder.equals("regalo")) {
 					System.out.println("\n----ordine alfabetico per nome regalo----\n");
-					Collections.sort(regali, Comparator.comparing(Regalo::getNome));
+					Collections.sort(regali, Comparator.comparing(regalo->regalo.getNome()));
 				}else if(strOrder.equals("destinatario")) {
 					System.out.println("\n----ordine alfabetico per nome destinatario----\n");
 
-					Collections.sort(regali, Comparator.comparing(Regalo::getDestinatario));
+					Collections.sort(regali, Comparator.comparing(regalo->regalo.getDestinatario()));
 				}
 				
 				break;
